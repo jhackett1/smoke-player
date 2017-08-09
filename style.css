@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/bebas-neue.otf"); }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Bebas Neue", Oswald, sans-serif;
+  color: #505050;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400; }
+
+p {
+  font-family: "Open Sans Condensed", Helvetica, sans-serif;
+  color: #505050; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #bb2d42;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  max-width: 360px;
+  max-height: 600px; }
+
+section.branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  section.branding img {
+    width: 230px;
+    margin: 15px; }
+
+section.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.controls button {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    border: 0px solid #f6f6f6;
+    color: #f6f6f6;
+    background-color: #3ec3d3;
+    outline: none;
+    font-size: 2.4em;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    section.controls button i.fa-play {
+      margin-left: 5px; }
+    section.controls button:active {
+      -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+      -webkit-filter: brightness(1.1);
+      filter: brightness(1.1);
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
+
+section.data, section.ad {
+  margin: 10px;
+  border-radius: 1px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+
+section.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  section.data div.show-image {
+    height: 120px;
+    width: 120px;
+    background-color: #dfdfdf;
+    background-position: center;
+    background-size: cover; }
+  section.data aside {
+    margin: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    section.data aside p {
+      font-size: 0.8em;
+      color: #969696; }
+    section.data aside h3 {
+      font-family: "Open Sans Condensed", Helvetica, sans-serif;
+      font-size: 0.9em; }
+    section.data aside h2 {
+      margin: 2px 0px; }
+
+section.ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  section.ad p {
+    font-size: 0.9em; }
+  section.ad span {
+    font-family: "Bebas Neue", Oswald, sans-serif;
+    color: #bb2d42; }
+  section.ad a {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: block; }
+
+section.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px; }
+  section.social .twitter-tweet-button {
+    margin-right: 5px; }

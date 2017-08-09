@@ -1,0 +1,137 @@
+// Fonts
+@font-face
+  font-family: 'Bebas Neue'
+  src: url('../fonts/bebas-neue.otf')
+
+// Color scheme
+$brand-red: #bb2d42
+$dark-red: #A42739
+$brand-blue: #254461
+$dark-grey: #2d2d2d
+$mid-grey: #505050
+$light-grey: #969696
+$bg-grey: #f6f6f6
+
+// Default font stacks
+$h-stack: "Bebas Neue", Oswald, sans-serif
+$p-stack: "Open Sans Condensed", Helvetica, sans-serif
+
+h1,h2,h3,h4,h5
+  font-family: $h-stack
+  color: $mid-grey
+  -webkit-font-smoothing: antialiased
+  font-weight: 400
+
+p
+  font-family: $p-stack
+  color: $mid-grey
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: $brand-red
+  background-position: top
+  background-size: contain
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 100vw
+  height: 100vh
+  max-width: 360px
+  max-height: 600px
+
+section.branding
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 230px
+    margin: 15px
+
+section.controls
+  display: flex
+  justify-content: center
+  align-items: center
+  button
+    height: 100px
+    width: 100px
+    border-radius: 150px
+    border: 0px solid $bg-grey
+    color: $bg-grey
+    background-color: #3ec3d3
+    outline: none
+    font-size: 2.4em
+    cursor: pointer
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1)
+    transition: 0.5s
+    i.fa-play
+      margin-left: 5px
+    &:active
+      box-shadow: 0px 3px 2px rgba(0,0,0,0.2)
+      filter: brightness(1.1)
+      transition: 0.1s
+
+section.data, section.ad
+  margin: 10px
+  border-radius: 1px
+  background-color: $bg-grey
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1)
+
+  overflow: hidden
+
+section.data
+  display: flex
+  flex-direction: row
+  div.show-image
+    height: 120px
+    width: 120px
+    background-color: #dfdfdf
+    background-position: center
+    background-size: cover
+  aside
+    margin: 10px
+    flex: 1
+    p
+      font-size: 0.8em
+      color: $light-grey
+    h3
+      font-family: $p-stack
+      font-size: 0.9em
+    h2
+      margin: 2px 0px
+
+
+section.ad
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 10px
+  align-items: center
+  position: relative
+  p
+    font-size: 0.9em
+
+  span
+    font-family: $h-stack
+    color: $brand-red
+
+  a
+    position: absolute
+    top: 0px
+    bottom: 0px
+    left: 0px
+    right: 0px
+    display: block
+
+section.social
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  margin: 10px
+  .twitter-tweet-button
+    margin-right: 5px
